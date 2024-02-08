@@ -1,0 +1,66 @@
+<html>
+<head>
+    <title>Cancer Assessment</title>
+    <link rel = "stylesheet" href = "diabetic.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="inner-box" id = "card">
+                <div class="card-front">
+                    <h2> CARDIAC PATIENT  </h2>                    
+                    <form name = "myform" action="login.php" method="POST">
+                        <p>Are you above 18?</p>
+                        <input type="radio" id="Yes" name="age" value="Yes">
+                        <label for="Yes">Yes</label><br>
+                        <input type="radio" id="No" name="age" value="No">
+                        <label for="No">No</label><br>
+                        
+                        <p>New Lump in the Breast or Underarm?</p>
+                        <input type="radio" id="feel" name="feel" value="Yes">
+                        <label for="Yes">Yes</label><br>
+                        <input type="radio" id="feel" name="feel" value="No">
+                        <label for="No">No</label><br>
+
+                        <p>Is there any thickening or swallowing of part of the Breast?</p>
+                        <input type="radio" id="Yes" name="breathing" value="Yes">
+                        <label for="Yes">Yes</label><br>
+                        <input type="radio" id="No" name="breathing" value="No">
+                        <label for="No">No</label><br>
+
+                        <p>Do you feel any Irritation or Dimpling of Breast Skin?</p>
+                        <input type="radio" id="Yes" name="chest" value="Yes">
+                        <label for="Yes">Yes</label><br>
+                        <input type="radio" id="No" name="chest" value="No">
+                        <label for="No">No</label><br>
+
+                        <p>Is there any redness or flaky skin in the nipple area of the breast?</p>
+                        <input type="radio" id="Yes" name="feel" value="Yes">
+                        <label for="Yes">Yes</label><br>
+                        <input type="radio" id="No" name="feel" value="No">
+                        <label for="No">No</label><br>
+
+                        <p>Do You feel pain in any area of the Breast?</p>
+                        <input type="radio" id="Yes" name="heartbeat" value="Yes">
+                        <label for="Yes">Yes</label><br>
+                        <input type="radio" id="No" name="heartbeat" value="No">
+                        <label for="No">No</label><br>    
+
+                        <button type = "button" class = "btn"> Assess Here </button>
+
+                    </form>
+                    
+                 </div>
+                    
+    <script>
+        var card = document.getElementById("card");
+        function openRegister(){
+            card.style.transform = "rotateY(-180deg)";
+        }
+        function openLogin(){
+            card.style.transform = "rotateY(0deg)";
+        }
+    </script>
+        
+</body>
+</html>
